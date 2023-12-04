@@ -1,14 +1,17 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const firebaseConfig = {
+    apiKey: "AIzaSyApkCKvEN4myBQ2mwWyUdFx_WrLjbWwO60",
+    authDomain: "oakes-tipping-comp.firebaseapp.com",
+    projectId: "oakes-tipping-comp",
+    storageBucket: "oakes-tipping-comp.appspot.com",
+    messagingSenderId: "416984182485",
+    appId: "1:416984182485:web:a43c65eefbda3a4579bc5c",
+    measurementId: "G-F9B018DMFK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
 // Initialize variables
 const auth = firebase.auth()
 const database = firebase.database()
