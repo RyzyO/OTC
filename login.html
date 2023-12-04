@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- Include any necessary CSS -->
+  <style>
+    /* Your CSS styles for login page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .input-field {
+      margin-bottom: 15px;
+    }
+
+    .input-field input {
+      padding: 8px;
+      width: 200px;
+    }
+
+    .input-field button {
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <div class="input-field">
+      <input type="text" placeholder="Username" id="username">
+    </div>
+    <div class="input-field">
+      <input type="password" placeholder="Password" id="password">
+    </div>
+    <div class="input-field">
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- JavaScript for handling login -->
+  <script>
+    function login() {
+      // Get entered username and password
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Perform authentication (You can replace this with your authentication logic)
+      // For simplicity, this example just checks if both fields are filled
+      if (username && password) {
+        // Successful login
+        alert('Login successful!');
+        // Redirect to index page or perform other actions after login
+        // window.location.href = 'index.html'; // Redirect to index page
+      } else {
+        // Failed login
+        alert('Please enter valid credentials.');
+      }
+    }
+  </script>
+</body>
+</html>
 
