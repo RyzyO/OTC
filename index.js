@@ -1,9 +1,5 @@
 
 
-// Initialize variables
-const auth = firebase.auth()
-const database = firebase.database()
-
 // Set up our register function
 function register () {
   // Get all our input fields
